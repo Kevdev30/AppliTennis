@@ -217,6 +217,8 @@ body {
 }
 
 .text h2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 2.5rem;
   font-weight: 600;
   margin: 2rem 0;
@@ -237,14 +239,14 @@ body {
 }
 
 .img.sign-in img {
-  width: 42vw;
+  width: 35vw;
   bottom: 0%;
 }
 
 .img.sign-up img {
-  top: 0%;
-  right: 10%;
-  width: 34vw;
+  top: 1rem;
+  right: 5%;
+  width: 50vw;
 }
 
 .text.sign-in h2,
@@ -316,7 +318,8 @@ b#sign-up {
 
   .text {
     margin: 0rem;
-  }
+
+  } 
 }
 
 @media only screen and (max-width: 567px) {
@@ -391,5 +394,28 @@ b#sign-up {
   .text.sign-in {
     left: 2%;
     max-width: 100%;
+  }
+}
+
+.centrer{
+  text-align: center;
+}
+
+.Animation{
+  text-transform: uppercase; 
+  background-image: linear-gradient(to right, #00F260, #f79d00, #64f38c);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+  
+  background-size: 300%;
+  background-position: -100%;  
+  
+  animation: animatedText 2s infinite alternate-reverse;
+}
+
+@keyframes animatedText{
+  to{
+    background-position: 100%; 
   }
 }
