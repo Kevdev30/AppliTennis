@@ -235,12 +235,13 @@ body {
   position: absolute;
   transition: 1s ease-in-out;
   transition-delay: 0.4s;
-  z-index: 100;
+  z-index: 200;
 }
 
 .img.sign-in img {
   width: 35vw;
-  bottom: 0%;
+  top: 5rem;
+  left: 5rem;
 }
 
 .img.sign-up img {
@@ -395,10 +396,6 @@ b#sign-up {
     left: 2%;
     max-width: 100%;
   }
-}
-
-.centrer{
-  text-align: center;
 }
 
 .Animation{
